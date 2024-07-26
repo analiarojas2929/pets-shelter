@@ -1,0 +1,247 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: #009999;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column; /* Arrange children in a column */
+    align-items: center; /* Center items horizontally */
+    justify-content: space-between;
+    position: relative;
+}
+
+header img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.navegacion-principal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space items across the header */
+    width: 100%; /* Ensure it takes full width */
+    padding: 10px 0;
+}
+
+.navegacion-principal img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.navegacion-principal h1 {
+    margin: 0;
+    font-size: 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* Allows the title to expand and fill space */
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Use gap for consistent spacing */
+}
+
+.navigation a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.donate-button {
+    background-color: #DDA0DD;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    box-shadow: 0 0 5px #ffffff;
+    border: 2px solid white;
+}
+
+.donate-button:hover {
+    background-color: #C48BC0;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 80%;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+    gap: 20px; 
+}
+
+
+.search-container label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block; 
+    font-size: 16px;
+}
+
+.label-and-select {
+    
+    width: 100%;
+    max-width: 300px;
+}
+.select-with-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+    width: 100%;
+}
+
+.paw-icon {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.select-container,
+.location-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    width: 100%;
+    max-width: 300px; 
+}
+
+.search-container select,
+.search-container input {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.search-container button {
+    background-color: #650bb4;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 30px;
+    width: 100%;
+    max-width: 200px;
+    box-shadow: 0 0 5px #ffffff;
+    border: 2px solid white;
+}
+
+.search-container button:hover {
+    background-color: #530896;
+}
+
+
+
+.pet-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.pet-card {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.pet-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.pet-card h3 {
+    margin-top: 10px;
+}
+
+.pet-card p {
+    margin-top: 5px;
+}
+
+.pet-button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.pet-list {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.pet-item {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px 0;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.pet-item img {
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.pet-item div {
+    flex: 1;
+}
+
+.pet-item h3 {
+    margin: 0;
+    font-size: 22px;
+    color: #009999;
+}
+
+.pet-item p {
+    margin: 5px 0;
+}
+
+.pet-item button {
+    background-color: #00CED1;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.pet-item div:last-child {
+    text-align: right;
+}

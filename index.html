@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shelter</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="navegacion-principal">
+            <img src="assets/img/heart-light.png" alt="Heart" width="60">
+            <h1>Pet Shelter</h1>
+            <div class="navigation">
+                <a href="#">Find a Pet</a>
+                <a href="#">About</a>
+                <button class="donate-button" onclick="donate()">Donate</button>
+            </div>
+        </div>
+        <div class="search-container">
+            <div class="select-container">
+                <div class="label-and-select">
+                    <label for="pet-type">I'm looking for a...</label>
+                    <div class="select-with-icon">
+                        <span class="paw-icon">
+                            <img src="assets/img/paw-light.png" alt="paw" width="30">
+                        </span>
+                        <select id="pet-type" onchange="showAlert()">
+                            <option value="Any Pet">Any Pet</option>
+                            <option value="Dog">Dog</option>
+                            <option value="Cat">Cat</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="location-container">
+                <div class="label-and-select">
+                    <label for="location">in or near...</label>
+                    <div class="select-with-icon">
+                        <span class="pin-icon">
+                            <img src="assets/img/pin-light.png" alt="pin" width="30">
+                        </span>
+                        <input type="text" id="location" placeholder="City or Zip Code">
+                    </div>
+                </div>
+            </div>
+            <button>Find my new best friend</button>
+        </div>
+    </header>
+    <main class="container">
+        <div class="pet-list">
+            <div class="pet-item">
+                <img src="assets/img/pepper.jpg" alt="Pepper" width="100">
+                <div>
+                    <h3>Pepper</h3>
+                    <p>Pepper is a slightly shy grey tabby, but she really loves showing her human affection.</p>
+                </div>
+                <div>
+                    <p>3 petting(s)</p>
+                    <button onclick="likeDefinition(this, 'Pet Pepper')">Pet Pepper</button>
+                </div>
+            </div>
+            <div class="pet-item">
+                <img src="assets/img/bruce.jpg" alt="Bruce" width="100">
+                <div>
+                    <h3>Bruce</h3>
+                    <p>Bruce is a loyal companion. He loves long walks and cold weather.</p>
+                </div>
+                <div>
+                    <p>5 petting(s)</p>
+                    <button onclick="likeDefinition(this, 'Pet Bruce')">Pet Bruce</button>
+                </div>
+            </div>
+            <div class="pet-item">
+                <img src="assets/img/oscar.jpg" alt="Oscar" width="100">
+                <div>
+                    <h3>Oscar</h3>
+                    <p>Oscar is bright, energetic, and friendly. He is looking for a good home.</p>
+                </div>
+                <div>
+                    <p>8 petting(s)</p>
+                    <button onclick="likeDefinition(this, 'Pet Oscar')">Pet Oscar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
