@@ -65,21 +65,36 @@ header h1 {
     font-size: 18px;
 }
 
-.donate-button {
-    background-color: #DDA0DD;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 15px;
-    cursor: pointer;
-    font-size: 16px;
-    box-shadow: 0 0 5px #ffffff;
-    border: 2px solid white;
+
+
+.donate-button{
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
 }
 
-.donate-button:hover {
-    background-color: #C48BC0;
+.donate-button:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
 }
+
+@media (min-width: 768px) {
+  .donate-button {
+    padding: 0.25em 0.75em;
+  }
+}
+
 
 .search-container {
     display: flex;
@@ -139,16 +154,19 @@ header h1 {
 
 .search-container button {
     background-color: #650bb4;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    color: white; /* Ensure text color is white */
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
     cursor: pointer;
-    margin-top: 30px;
-    width: 100%;
-    max-width: 200px;
-    box-shadow: 0 0 5px #ffffff;
-    border: 2px solid white;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px black, 2px 2px 0px 0px black, 3px 3px 0px 0px black, 4px 4px 0px 0px black, 5px 5px 0px 0px black; /* Black shadow */
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    margin-top: 20px;
 }
 
 .search-container button:hover {
@@ -233,13 +251,23 @@ header h1 {
 }
 
 .pet-item button {
-    background-color: #00CED1;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
+    background-color: #00ced1;
+    color: white; /* Ensure text color is white */
     font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px black, 2px 2px 0px 0px black, 3px 3px 0px 0px black, 4px 4px 0px 0px black, 5px 5px 0px 0px black; /* Black shadow */
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.boton-color{
+    color: white;
 }
 
 .pet-item div:last-child {
