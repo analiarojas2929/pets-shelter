@@ -11,7 +11,7 @@ header {
     color: white;
     padding: 10px 20px;
     display: flex;
-    flex-direction: column; /* Arrange children in a column */
+    flex-direction: column; 
     align-items: center; /* Center items horizontally */
     justify-content: space-between;
     position: relative;
